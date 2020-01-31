@@ -3,19 +3,18 @@
         background-color: rgb(196, 167, 151);
       }
       
-      h1,p,h2,li {
+      h1 {
         font-family: 'Lucida Sans';
         color: rgb(75, 108, 136);
         font-size: 24px;
+        text-align: center;
       }
 
       p,h2,li {
         font-family: 'Lucida Sans';
         color: rgb(75, 108, 136);
         font-size: 14px;
+        text-align: left;
       }
-
-      h1 {
-        text-align: center;
-      }
+      
 
