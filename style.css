@@ -6,8 +6,16 @@
       h1,p,h2,li {
         font-family: 'Lucida Sans';
         color: rgb(75, 108, 136);
-        font-size: 20px;
+        font-size: 24px;
+      }
+
+      p,h2,li {
+        font-family: 'Lucida Sans';
+        color: rgb(75, 108, 136);
+        font-size: 14px;
+      }
+
+      h1 {
         text-align: center;
       }
-       
 
