@@ -24,6 +24,10 @@ body {
     color: black;
   }
 
+  .topnav a.active {
+    background-color: rgb(255, 255, 255);
+    color:rgb(31, 33, 37) ;
+  }
     .aligncenter {text-align: center;}
 
 h1 {
