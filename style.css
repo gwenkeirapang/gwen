@@ -1,18 +1,18 @@
 
     body {
-        background-color: rgb(196, 167, 151);
+        background-color: rgb(153, 148, 136);
       }
       
       h1 {
-        font-family: 'calibri';
-        color: rgb(75, 108, 136);
+        font-family: 'Prestige Elite Std';
+        color: rgb(228, 228, 228);
         font-size: 30px;
         text-align: center;
       }
 
       p,h2,li {
-        font-family: 'open sans';
-        color: rgb(75, 108, 136);
+        font-family: 'Prestige Elite Std';
+        color: rgb(0, 0, 0);
         font-size: 16px;
         text-align: left;
       }
