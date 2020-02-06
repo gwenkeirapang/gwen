@@ -6,14 +6,14 @@
       h1 {
         font-family: 'Prestige Elite Std';
         color: rgb(228, 228, 228);
-        font-size: 30px;
+        font-size: 24pt;
         text-align: center;
       }
 
       p,h2,li {
         font-family: 'Prestige Elite Std';
         color: rgb(0, 0, 0);
-        font-size: 16px;
+        font-size: 12pt;
         text-align: left;
       }
 
