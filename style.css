@@ -25,12 +25,9 @@
         float: left;
         width: 50%;
         padding: 0%;
-        height: 300px; 
+        height: 287.5pt; 
       }
-     
       
-  
-
       .row:after {
         content: "";
         display: table;
