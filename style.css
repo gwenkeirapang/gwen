@@ -4,14 +4,14 @@
       }
       
       h1 {
-        font-family: 'Karla';
+        font-family: 'open sans';
         color: rgb(75, 108, 136);
         font-size: 32px;
         text-align: center;
       }
 
       p,h2,li {
-        font-family: 'Karla';
+        font-family: 'open sans';
         color: rgb(75, 108, 136);
         font-size: 18px;
         text-align: left;
