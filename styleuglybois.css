@@ -21,13 +21,13 @@ body {
 
   .topnav a:hover {
     background-color: rgb(200,200,200);
-    color: black;
+    color: rgb(31, 33, 37);
   }
 
   .topnav a.active {
-    background-color: rgb(255, 255, 255);
-    color:rgb(31, 33, 37) ;
+    color:rgb(250, 250, 250) ; font-weight: bold;
   }
+  
     .aligncenter {text-align: center;}
 
 h1 {
