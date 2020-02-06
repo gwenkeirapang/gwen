@@ -4,16 +4,16 @@
       }
       
       h1 {
-        font-family: 'caveat brush';
+        font-family: 'calibri';
         color: rgb(75, 108, 136);
-        font-size: 32px;
+        font-size: 30px;
         text-align: center;
       }
 
       p,h2,li {
         font-family: 'open sans';
         color: rgb(75, 108, 136);
-        font-size: 18px;
+        font-size: 16px;
         text-align: left;
       }
 
