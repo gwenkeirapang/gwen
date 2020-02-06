@@ -1,20 +1,46 @@
-
-    body {
+ body {
         background-color: rgb(153, 148, 136);
       }
+    
+ .aligncenter {text-align: center;}
+
+  h1 {
+    font-family: 'Prestige Elite Std';
+    color: rgb(228, 228, 228);
+    font-size: 20pt;
+    text-align: center;
+    margin-top: 5%;
+    }
+  
+  .hh {
+   font-family: 'Prestige Elite Std';
+   color: rgb(0, 0, 0);
+   font-size: 12pt;
+   }
+
+   h2 {text-align: center;}
+
+   
+      .column {
+        float: left;
+        width: 50%;
+        padding: 0%;
+        height: 300px; 
+      }
+     
       
-      h1 {
-        font-family: 'Prestige Elite Std';
-        color: rgb(228, 228, 228);
-        font-size: 20pt;
-        text-align: center;
+  
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
       }
 
-      h3,h2,h4,h5 {
-        font-family: 'Prestige Elite Std';
-        color: rgb(0, 0, 0);
-        font-size: 12pt;
-        text-align: left;
-      }
+      
+
+    
+
+
 
 
