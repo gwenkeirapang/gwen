@@ -7,9 +7,11 @@ window.addEventListener("load", () => {
 
     let painting = false;
 
-    function startPosition() {painting = true}
+    function startPosition()
+    {painting = true; draw(e)}
 
-    function finishedPosition() {painting = false}
+    function finishedPosition()
+    {painting = false; ctx.beginPath()}
 
     function draw(e){
         if (!painting) return;
@@ -17,7 +19,9 @@ window.addEventListener("load", () => {
         ctx.lineCap = "round";
 
         ctx.lineTo(e.clientX, e.clientY);
-        ctx.stroke()
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(e.clientX, e.clientY);
     }
 
     canvas.addEventListener("mousedown", startPosition);
