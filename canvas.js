@@ -17,7 +17,6 @@ window.addEventListener("load", () => {
         if (!painting) return;
         ctx.lineWidth = 10;
         ctx.lineCap = "round";
-        ctx.strokestyle = "red"
 
         ctx.lineTo(e.clientX, e.clientY);
         ctx.stroke();
