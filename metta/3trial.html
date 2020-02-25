@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Metta 2 Bezier Curve</title>
+    <title>Metta 3 Trial</title>
 
 <script>
 window.onload = function()
@@ -12,11 +12,8 @@ var context = canvas.getContext("2d");
 
 context.lineWidth = 10;
 context.strokeStyle = "black"; 
-context.lineCap = "round";
-context.lineJoin = "round";
-context.moveTo(180, 130);
-
-context.bezierCurveTo(150, 10, 420, 10, 180, 130);
+context.moveTo(50, 50);
+context.bezierCurveTo(0, 300, 420, 10, 50, 50);
 context.stroke();
 };
 </script>
