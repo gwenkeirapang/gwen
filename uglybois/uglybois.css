@@ -1,11 +1,12 @@
 body {
-    background-color: rgb(185, 187, 190);
+    background-color: rgb(252, 0, 0);
+  
   }
 
 
 
   .topnav {
-    background-color: rgb(150, 120, 120);
+    background-color: rgb(0, 0, 0);
     overflow: hidden;
   }
 
@@ -31,7 +32,7 @@ body {
     .aligncenter {text-align: center;}
 
 h1 {
-font-family: 'Orator Std';
+font-family: 'Calibri';
 color: rgb(80, 150, 100);
 font-size: 24pt;
 text-align: center;
