@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(31, 33, 37);
+  }
+
+
+
+  .topnav {
+    background-color: rgb(150, 120, 120);
+    overflow: hidden;
+  }
+
+  .topnav a {
+    float: left;
+    color: rgb(31, 33, 37);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Orator Std';
+    font-size: 16px;
+  }
+
+  .topnav a:hover {
+    background-color: rgb(200,200,200);
+    color: rgb(31, 33, 37);
+  }
+
+  .topnav a.active {
+    color:rgb(250, 250, 250) ; font-weight: bold;
+  }
+  
+    .aligncenter {text-align: center;}
+
+h1 {
+font-family: 'Orator Std';
+color: rgb(80, 150, 100);
+font-size: 24pt;
+text-align: center;
+margin-top: 5%;
+}
+
+.hh {
+font-family: 'Orator Std';
+color: rgb(150, 120, 120);
+font-size: 14pt;
+}
+
+h2 {text-align: center;}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 0%;
+    height: 287.5pt; 
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  
