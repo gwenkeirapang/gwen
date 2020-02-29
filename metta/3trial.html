@@ -1,25 +1,52 @@
-<!DOCTYPE HTML>
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Metta 3 Trial</title>
-
-<script>
-window.onload = function()
-{
-var canvas = document.getElementById("myCanvas");
-var context = canvas.getContext("2d");
-
-context.lineWidth = 10;
-context.strokeStyle = "black"; 
-context.moveTo(50, 50);
-context.bezierCurveTo(0, 300, 420, 10, 50, 50);
-context.stroke();
-};
-</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Metta 3 Trial</title>
+  <link rel="stylesheet" type="text/css" href="3trial.css">
 </head>
+
 <body>
-<canvas id="myCanvas" width="600" height="250" style="border:1px solid black;">
-</canvas>
+
+    <canvas id="canvas"></canvas>
+
+    <script>
+
+    window.addEventListener("load", () => {
+    const canvas = document.querySelector("#canvas");
+    const ctx = canvas.getContext("2d");
+
+    canvas.height = window.innerHeight;
+    canvas.width = window.innerWidth;
+
+    let painting = false;
+
+    function startPosition()
+    {painting = true; draw(e)}
+
+    function finishedPosition()
+    {painting = false; ctx.beginPath()}
+
+    function draw(e){
+        if (!painting) return;
+        ctx.lineWidth = 10;
+        ctx.lineCap = "round";
+
+        ctx.lineTo(e.clientX, e.clientY);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(e.clientX, e.clientY);
+    }
+
+    canvas.addEventListener("mousedown", startPosition);
+    canvas.addEventListener("mouseup", finishedPosition);
+    canvas.addEventListener("mousemove", draw)
+    })
+    </script>
+
 </body>
+
 </html>
