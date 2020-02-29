@@ -5,8 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Metta 3 Trial</title>
-  <link rel="stylesheet" type="text/css" href="3trial.css">
+  <title>Metta 4 Trial</title>
 </head>
 
 <body>
@@ -17,36 +16,32 @@
     <script>
     window.addEventListener("load", () =>
     {
-    const canvas = document.querySelector("#canvas");
-    const ctx = canvas.getContext("2d");
+    var img = document.querySelector("canvas");
+    var ctx = canvas.getContext("2d");
 
-    canvas.height = window.innerHeight;
-    canvas.width = window.innerWidth;
+    img.height = 500;
+    img.width = 500;
 
+    
+    img.addEventListener("click", draw);
     function draw(e)
     {
-        ctx.lineWidth = 10;
+        ctx.lineWidth = 5;
         ctx.lineCap = "round";
-       
-        ctx.lineTo(e.clientX,e.clientY)
-        ctx.stroke();
-    }
+        ctx.lineJoin = "round";
 
-    function draw2(e)
-    {
-        ctx.lineWidth = 10;
-        ctx.lineCap = "round";
-       
-        ctx.closePath()
-        ctx.stroke()
+        let p0 = { x: 250,    y: 250  };
+        let p1 = { x: e.offsetX,   y: e.offsetY};
+        let p2 = { x: e.offsetX-100,   y: e.offsetY+50};
+
+        ctx.beginPath();
+        ctx.moveTo(p0.x,p0.y);
+        ctx.bezierCurveTo(p1.x, p1.y, p2.x, p2.y, p0.x, p0.y);
+        ctx.stroke();
 
         
     }
-
-    canvas.addEventListener("click", draw);
-    canvas.addEventListener("dblclick", draw2);
     }) 
-
 
     </script>
 
@@ -54,3 +49,5 @@
 
 
 </html>
+
+
