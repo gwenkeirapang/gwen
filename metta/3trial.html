@@ -10,12 +10,12 @@
 </head>
 
 <body>
+    
+    <canvas id="canvas" style="border:1px solid black;"></canvas>
 
-    <canvas id="canvas"></canvas>
 
     <script>
-
-    window.addEventListener("load", () => {
+        window.addEventListener("load", () => {
     const canvas = document.querySelector("#canvas");
     const ctx = canvas.getContext("2d");
 
@@ -42,11 +42,14 @@
     }
 
     canvas.addEventListener("mousedown", startPosition);
-    canvas.addEventListener("mouseup", finishedPosition);
-    canvas.addEventListener("mousemove", draw)
-    })
+    canvas.addEventListener("mouseup", draw);
+
+    }) 
+
+
     </script>
 
 </body>
+
 
 </html>
